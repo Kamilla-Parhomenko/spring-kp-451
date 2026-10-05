@@ -19,6 +19,7 @@ public class Game {
     private String genre;
     private Double price;
     @ManyToOne
+    @JoinColumn(name = "studio_id")
     private Studio studio;
 
     public Game(Long id, String name, String genre, Double price, Studio studio) {
